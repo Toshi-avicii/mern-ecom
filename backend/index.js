@@ -6,8 +6,8 @@ const userRoutes = require('./routes/users/userRoutes');
 
 // db connection 
 connect();
-
-app.use("/", userRoutes);
+app.use(express.json());
+app.use("/api", userRoutes);
 
 const port = env.PORT || 6000;
 app.listen(port, () => {
