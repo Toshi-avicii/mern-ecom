@@ -39,6 +39,8 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      black1: "#030301",
+      black2: "#1a1d24"
     }),
     columns: {
       auto: 'auto',
@@ -374,6 +376,7 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      primary: 'Poppins'
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
