@@ -3,9 +3,11 @@ const app = express();
 const env = require('./config/envConfig');
 const connect = require('./config/db');
 const userRoutes = require('./routes/users/userRoutes');
+const cors = require('cors');
 
 // db connection 
 connect();
+app.use(cors());
 app.use(express.json());
 app.use("/api", userRoutes);
 
