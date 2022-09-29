@@ -72,7 +72,7 @@ function AdminLogin() {
               <input 
                 type="submit" 
                 value={response.isLoading ? 'Loading...' : 'Sign In'} 
-                className="bg-blue-500 text-white w-full px-4 py-2 rounded cursor-pointer hover:bg-blue-600" 
+                className="bg-primary text-white w-full px-4 py-2 rounded cursor-pointer hover:bg-blue-600" 
               />
           </div>
         </form>
