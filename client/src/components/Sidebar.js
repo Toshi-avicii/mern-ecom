@@ -14,19 +14,24 @@ function Sidebar({ side, closeSidebar }) {
         </div>
 
         <ul>
-            <li className='p-3 text-md font-medium cursor-pointer bg-white rounded-md mb-5'>
+            <li className='btn'>
                 <i className="bi bi-card-list mr-3 px-2 py-1 bg-primary text-xl text-white rounded"></i>
                 <Link to="/dashboard/products">Products</Link>
             </li>
 
-            <li className='p-3 text-md font-medium cursor-pointer bg-white rounded-md mb-5'>
+            <li className='btn'>
                 <i className="bi bi-bag-check-fill mr-3 px-2 py-1 bg-primary text-xl text-white rounded"></i>
                 <Link to="/dashboard/products">Orders</Link>
             </li>
 
-            <li className='p-3 text-md font-medium cursor-pointer bg-white rounded-md mb-5'>
+            <li className='btn'>
                 <i className="bi bi-people-fill mr-3 px-2 py-1 bg-primary text-xl text-white rounded"></i>
                 <Link to="/dashboard/products">Customers</Link>
+            </li>
+
+            <li className='btn'>
+                <i className="bi bi-bar-chart-fill mr-3 px-2 py-1 bg-primary text-xl text-white rounded"></i>
+                <Link to="/dashboard/categories">Categories</Link>
             </li>
         </ul>
     </div>

@@ -20,7 +20,6 @@ function AdminLogin() {
 
   const [login, response] = useAuthLoginMutation();
   const errors = response?.error?.data.errors ? response?.error?.data.errors : []; 
-  console.log('my response', response);
   
   const adminLoginFunction = e => {
     e.preventDefault();
