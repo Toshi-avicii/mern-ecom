@@ -10,6 +10,9 @@ const store = configureStore({
         [categoryService.reducerPath]: categoryService.reducer,
         "authReducer": authReducer,
         "globalReducer": globalReducer
+    },
+    middleware: (getDefaultMiddleware) => {
+        return getDefaultMiddleware().concat([categoryService.middleware])
     }
 });
 

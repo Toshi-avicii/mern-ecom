@@ -16,6 +16,7 @@ function Routing() {
             <Route path='dashboard'>
               <Route path='products' element={<PrivateRoute><Products /></PrivateRoute>} />
               <Route path="categories" element={<PrivateRoute><Categories /></PrivateRoute>} />
+              <Route path="categories/:page" element={<PrivateRoute><Categories /></PrivateRoute>} />
               <Route path="create-categories" element={<PrivateRoute><CategoryForm /></PrivateRoute>} />
             </Route>
         </Routes>
